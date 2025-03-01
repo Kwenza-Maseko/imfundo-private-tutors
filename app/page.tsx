@@ -4,7 +4,6 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Welcome from "@/components/Welcome";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Image from "next/image";
 
 export default function Home() {
   return (

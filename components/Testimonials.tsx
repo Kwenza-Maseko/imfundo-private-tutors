@@ -68,7 +68,7 @@ const Testimonials = () => {
           <p className="text-sm text-gray-200">{testimonials[current].role}</p>
 
           {/* Testimonial Text */}
-          <p className="mt-4 text-center text-gray-100">"{testimonials[current].feedback}"</p>
+          <p className="mt-4 text-center text-gray-100">&quot;{testimonials[current].feedback}&ldquo;</p>
         </div>
 
         {/* Controls */}

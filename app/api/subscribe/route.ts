@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import mongoose from "mongoose";
 import User from "@/utils/model/User";
 import { connectToDB } from "@/utils/mongodb";
 

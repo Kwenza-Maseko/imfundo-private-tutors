@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
                     </div>
                     <div className='flex items-center flex-col gap-6 px-4 pb-4'>
                         <p className='text-lg font-bold text-center'>Personalized Learning Plans</p>
-                        <p className='text-center text-sm text-zinc-300'>We assess each student's strengths and weaknesses and create a custom study plan.</p>
+                        <p className='text-center text-sm text-zinc-300'>We assess each student&apos;s strengths and weaknesses and create a custom study plan.</p>
                     </div>
                 </div>
 

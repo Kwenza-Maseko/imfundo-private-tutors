@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import {
     AlertDialog,
-    AlertDialogAction,
     AlertDialogCancel,
     AlertDialogContent,
     AlertDialogDescription,

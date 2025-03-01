@@ -30,10 +30,10 @@ const AboutUs = () => {
                         <div className='w-[80px] h-[2px] bg-[#150233] rounded' />
                     </div>
 
-                    <p className='text-gray-700'>At Mfundo Private Tutorsis dedicated to helping students excel in their studies by providing high-quality tutoring services. We understand that every student learns differently, and our goal is to create a supportive and engaging learning environment where they can thrive
+                    <p className='text-gray-700'>At Mfundo Private Tutors is dedicated to helping students excel in their studies by providing high-quality tutoring services. We understand that every student learns differently, and our goal is to create a supportive and engaging learning environment where they can thrive
                     </p>
 
-                    <p className='text-gray-700 mt-2'>With a team of <b>qualified and experienced educators</b> , we tailor our teaching methods to suit each student's unique needs. Whether you’re struggling with complex topics or simply want to boost your academic performance, we’re here to help!
+                    <p className='text-gray-700 mt-2'>With a team of <b>qualified and experienced educators</b> , we tailor our teaching methods to suit each student&apos;s unique needs. Whether you’re struggling with complex topics or simply want to boost your academic performance, we’re here to help!
                     </p>
 
                 </div>

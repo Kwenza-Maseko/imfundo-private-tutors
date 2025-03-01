@@ -14,7 +14,7 @@ const FAQs = () => {
     return (
         <div className="max-w-2xl py-16 px-6">
              <div className=" bg-[#15023346] rounded p-2 w-fit text-white mb-4 shadow shadow-lg text-sm">
-                        FAQ's
+                        FAQ&apos;s
                     </div>
             <p className='font-bold text-xl capitalize mb-2 headers-div'>Frequantly Asked Questions!</p>
             <div className='flex flex-col gap-1 mb-8'>

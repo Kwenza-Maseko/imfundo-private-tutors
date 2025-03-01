@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className=''>
+    <div>
         <SubBanner 
         pageName="About Us"
         />
