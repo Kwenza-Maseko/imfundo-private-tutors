@@ -39,6 +39,7 @@ const JoinUs = () => {
                 setMessage(data.message || "Already subscribed");
             }
         } catch (error) {
+            console.log(error)
             setMessage("Something went wrong. Please try again.");
         }
     };
