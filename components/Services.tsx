@@ -82,8 +82,8 @@ const Services = () => {
                 </div>
                 <p>We offer both virtual lessons and in-person tutoring, making it easier for students to learn from the comfort of their homes or at our learning center.</p>
 
-                <div className="flex justify-between gap-4 justify-center mt-8 rounded-md bg-gradient-to-r from-purple-800 to-indigo-900 p-4 text-white">
-                    <div className=' w-full flex flex-col gap-2 text-center border-r-2 border-white '>
+                <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-4 justify-center mt-8 rounded-md bg-gradient-to-r from-purple-800 to-indigo-900 p-4 text-white">
+                    <div className=' w-full flex flex-col gap-2 text-center md:border-r-2 border-white '>
                         <div className="flex flex-col md:flex-row gap-2 items-center justify-center py-2">
                             <LocateIcon size={20} />
                             <p className='font-bold text-center'>Location</p>
@@ -91,7 +91,7 @@ const Services = () => {
                         <p className='text-sm'>Your Preferred Space / My Work Space</p>
                     </div>
 
-                    <div className=' w-full flex flex-col gap-2 text-center border-r-2 border-white '>
+                    <div className=' w-full flex flex-col gap-2 text-center md:border-r-2 border-white '>
                         <div className="flex flex-col md:flex-row gap-2 items-center justify-center py-2">
                             <TimerIcon size={20} />
                             <p className='font-bold text-center'>Class Duration</p>
