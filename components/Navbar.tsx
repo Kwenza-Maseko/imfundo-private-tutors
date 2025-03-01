@@ -71,7 +71,7 @@ const Navbar = () => {
                                 />
                             </Link>
                             <div className="text-center flex items-center flex-col md:block">
-                                <p className="pacifico-regular md:text-2xl text-md md:tracking-[2px]">Imfundo Private Tutors</p>
+                                <p className="pacifico-regular md:text-2xl text-md md:tracking-[2px]">Imfundo-First Private Tutors</p>
                                 <p className="text-xs capitalize text-zinc-300">combination of intelligence</p>
                             </div>
                             <div className="hidden md:flex flex-col gap-1">

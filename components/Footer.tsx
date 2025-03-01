@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image"
 import Link from "next/link"
-import { MailIcon, LocateIcon } from 'lucide-react'
+import { MailIcon, MapPinIcon } from 'lucide-react'
 import { socials } from '@/constants';
 import JoinUs from './JoinUs';
 
@@ -21,7 +21,7 @@ const Footer = () => {
             />
 
             <div className="w-fit">
-              <p className="pacifico-regular md:text-xl text-md md:tracking-[2px]">Imfundo Private Tutors</p>
+              <p className="pacifico-regular md:text-xl text-md md:tracking-[2px]">Imfundo-First Private Tutors</p>
               <p className="text-xs capitalize text-gray-600 text-center">combination of intelligence</p>
             </div>
           </div>
@@ -34,14 +34,14 @@ const Footer = () => {
           <div className="flex flex-col gap-2 text-sm text-gray-500">
             <div
               className='flex items-center gap-2'>
-              <LocateIcon size={15} />
-              <p>531 Ntendeka | Newcastle | 2940 | South Africa</p>
+              <MapPinIcon size={15} />
+              <p>410 Ntendeka | Newcastle | 2940 | South Africa</p>
             </div>
             <div
               className='flex items-center gap-2'
             >
               <MailIcon size={15} />
-              <p>azermahle@gmail.com</p>
+              <p>mkhwanaziazemahle@gmail.com</p>
 
             </div>
             <div

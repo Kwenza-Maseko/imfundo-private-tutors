@@ -7,7 +7,7 @@ const FindUs = () => {
             <div className='w-full lg:w-[40%] flex flex-col gap-4 p-4 max-h-[500px] overflow-y-auto'>
                 <div className='bg-[#150233] rounded-md flex flex-col gap-5 h-[130px] p-4 md:p-8'>
                     <MapPinIcon size={30} className='text-white' />
-                    <p className='text-zinc-200 text-sm'>531 Ntendeka | Newcastle | 2940 | South Africa</p>
+                    <p className='text-zinc-200 text-sm'>410 Ntendeka | Newcastle | 2940 | South Africa</p>
                 </div>
                 <div className='bg-[#150233] rounded-md flex flex-col gap-5 h-[130px] p-4 md:p-8'>
                     <Phone size={30} className='text-white' />
@@ -15,7 +15,7 @@ const FindUs = () => {
                 </div>
                 <div className='bg-[#150233] rounded-md flex flex-col gap-5 h-[130px] p-4 md:p-8'>
                     <Mail size={30} className='text-white' />
-                    <p className='text-zinc-200 text-sm'>azermahle@gmail.com</p>
+                    <p className='text-zinc-200 text-sm'>mkhwanaziazemahle@gmail.com</p>
                 </div>
             </div>
             <div className="w-full lg:w-[60%]">
