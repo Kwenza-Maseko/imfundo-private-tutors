@@ -93,7 +93,7 @@ const Footer = () => {
           <Link
             href={"/"}
             className='font-bold text-sm'>
-            imfundo-private-tutors.co.za
+            imfundo-private-tutors.vercel.app
           </Link>
 
           <div className='border-l-2 border-gray-400 pl-2'>
