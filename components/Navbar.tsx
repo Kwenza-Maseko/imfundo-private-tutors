@@ -114,7 +114,7 @@ const Navbar = () => {
                                         key={links.id}
                                         href={`${links.link}`}
                                         className={`capitalize px-4 font-bold text-[11pt] hover:text-purple-600 ${pathname === links.link && "text-purple-600"}`}
-                                    >
+                                        onClick={() => setDropdown((prev) => !prev)}>
                                         {links.name}
                                     </Link>
                                 ))}
