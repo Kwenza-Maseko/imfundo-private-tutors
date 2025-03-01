@@ -7,24 +7,22 @@ import {
     AlertDialogCancel,
     AlertDialogContent,
     AlertDialogDescription,
-    AlertDialogFooter,
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
-import Popover from "./Popover";
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+import Popover from "./Popover"; // Import your custom pop-up component
 
 const JoinUs = () => {
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
     const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState<React.ReactNode | null>(null);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setMessage("");
+        setMessage(null); // Reset message before sending
 
         try {
             const res = await fetch("/api/subscribe", {
@@ -35,43 +33,38 @@ const JoinUs = () => {
 
             const data = await res.json();
             if (res.ok) {
-                setMessage("Successfully subscribed!");
+                setMessage("Subscribed Successfully!");
                 setEmail(""); // Clear input
             } else {
-                setMessage(data.message || "Something went wrong.");
+                setMessage(data.message || "Already subscribed");
             }
         } catch (error) {
-            setMessage("Error subscribing.");
+            setMessage("Something went wrong. Please try again.");
         }
     };
 
-
     return (
-        <div className=''>
+        <div>
             <AlertDialog>
                 <AlertDialogTrigger asChild>
-                    <Button variant="outline"
-                        className='text-[#150233] font-bold px-4 py-2 rounded bg-white w-fit'>Join Our Newsletter</Button>
+                    <Button variant="outline" className="text-[#150233] font-bold px-4 py-2 rounded bg-white w-fit">
+                        Join Our Newsletter
+                    </Button>
                 </AlertDialogTrigger>
                 <AlertDialogContent>
                     <AlertDialogHeader>
                         <div className="flex flex-col gap-2 items-center mb-6">
-                            <Image
-                                src={"/assets/imfundoLogo.png"}
-                                alt=""
-                                width={50}
-                                height={50}
-                                className=""
-                            />
+                            <Image src="/assets/imfundoLogo.png" alt="" width={50} height={50} />
                             <div>
-                                <AlertDialogTitle className="pacifico-regular text-gray-800">Imfundo Private Tutors</AlertDialogTitle>
-                                <p className="text-xs capitalize text-gray-700 text-center">combination of intelligence
+                                <AlertDialogTitle className="pacifico-regular text-gray-800">
+                                    Imfundo Private Tutors
+                                </AlertDialogTitle>
+                                <p className="text-xs capitalize text-gray-700 text-center">
+                                    Combination of intelligence
                                 </p>
                             </div>
-
                         </div>
                         <AlertDialogDescription>
-
                             Join our newsletter to keep up-to-date with Imfundo Private Tutors
                         </AlertDialogDescription>
                     </AlertDialogHeader>
@@ -93,7 +86,6 @@ const JoinUs = () => {
                                 onChange={(e) => setLastname(e.target.value)}
                                 required
                             />
-
                         </div>
                         <input
                             type="email"
@@ -111,20 +103,13 @@ const JoinUs = () => {
                         </button>
                         <AlertDialogCancel>Cancel</AlertDialogCancel>
                     </form>
-                    {message &&
-                        <>
-                            <Popover
-                                messages={message}
-                            />
-                        </>
-                    }
                 </AlertDialogContent>
-                <AlertDialogFooter>
-
-                </AlertDialogFooter>
             </AlertDialog>
-        </div>
-    )
-}
 
-export default JoinUs
+            {/* Show Popover when there's a message */}
+            {message && <Popover messages={message} />}
+        </div>
+    );
+};
+
+export default JoinUs;
